@@ -35,6 +35,8 @@ module Ramaze
       ::CGI.escapeHTML(string.to_s).gsub(/#/, '&#35;')
     end
 
+    # DEPRECATED: use Helper::CGI#h instead.
+
     def c(string)
       Ramaze::deprecated("Helper::CGI#c", "Helper::CGI#h")
       h(string)

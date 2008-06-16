@@ -45,6 +45,8 @@ module Ramaze
           }
         end
 
+        # DEPRECATED: use Adapter::Base::startup instead.
+
         def start_server(host, port)
           Ramaze::deprecated("Adapter::Base::start_server", "Adapter::Base::startup")
           startup(host, port)
